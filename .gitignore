@@ -46,3 +46,6 @@ amplifytools.xcconfig
 
 # IDE
 .vscode
+
+# Linters
+.eslintignore

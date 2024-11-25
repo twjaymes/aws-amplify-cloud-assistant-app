@@ -1,4 +1,4 @@
-#!/Users/taylorjaymes/develop/portfolio/aws/amplify-cloud-assistant/aws-amplify-cloud-assistant-app/amplify/backend/function/assistantFulfillment/pathToEnv/bin/python3.11
+#!/Users/taylorjaymes/develop/portfolio/aws/amplify-cloud-assistant/aws-amplify-cloud-assistant-app/amplify/backend/function/assistantFulfillment/pathToEnv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys

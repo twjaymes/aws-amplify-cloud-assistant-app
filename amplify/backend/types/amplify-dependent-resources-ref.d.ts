@@ -9,6 +9,7 @@ export type AmplifyDependentResourcesAttributes = {
     "awsassistantfcd2b45d": {
       "AppClientID": "string",
       "AppClientIDWeb": "string",
+      "CreatedSNSRole": "string",
       "IdentityPoolId": "string",
       "IdentityPoolName": "string",
       "UserPoolArn": "string",
@@ -20,6 +21,7 @@ export type AmplifyDependentResourcesAttributes = {
     "assistantFulfillment": {
       "Arn": "string",
       "LambdaExecutionRole": "string",
+      "LambdaExecutionRoleArn": "string",
       "Name": "string",
       "Region": "string"
     }

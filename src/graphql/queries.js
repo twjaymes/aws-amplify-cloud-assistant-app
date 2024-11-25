@@ -10,20 +10,12 @@ export const getConversation = /* GraphQL */ `
       description
       createdAt
       utterances {
-        items {
-          id
-          text
-          author
-          conversationId
-          data
-          createdAt
-          updatedAt
-          owner
-        }
         nextToken
+        __typename
       }
       updatedAt
       owner
+      __typename
     }
   }
 `;
@@ -40,13 +32,12 @@ export const listConversations = /* GraphQL */ `
         user
         description
         createdAt
-        utterances {
-          nextToken
-        }
         updatedAt
         owner
+        __typename
       }
       nextToken
+      __typename
     }
   }
 `;
@@ -61,6 +52,7 @@ export const getUtterance = /* GraphQL */ `
       createdAt
       updatedAt
       owner
+      __typename
     }
   }
 `;
@@ -80,8 +72,10 @@ export const listUtterances = /* GraphQL */ `
         createdAt
         updatedAt
         owner
+        __typename
       }
       nextToken
+      __typename
     }
   }
 `;
@@ -108,13 +102,12 @@ export const conversationsByUser = /* GraphQL */ `
         user
         description
         createdAt
-        utterances {
-          nextToken
-        }
         updatedAt
         owner
+        __typename
       }
       nextToken
+      __typename
     }
   }
 `;

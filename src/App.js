@@ -33,8 +33,8 @@ Amplify.configure({
   ...awsmobile,
   bots: {
     "AWS-Configurator": {
-      botId: "FJZEEWWPBU",
-      botAliasId: "G0UH3YLBPS",
+      botId: "JCUYDVNHJ1",
+      botAliasId: "GNIDQLNSS7",
       localeId: "en_US",
       region: "us-east-1",
       providerName: "AWSLex2Provider"

@@ -2,86 +2,74 @@
 // this is an auto generated file. This will be overwritten
 
 export const onCreateConversation = /* GraphQL */ `
-  subscription OnCreateConversation($owner: String) {
-    onCreateConversation(owner: $owner) {
+  subscription OnCreateConversation(
+    $filter: ModelSubscriptionConversationFilterInput
+    $owner: String
+  ) {
+    onCreateConversation(filter: $filter, owner: $owner) {
       id
       name
       user
       description
       createdAt
       utterances {
-        items {
-          id
-          text
-          author
-          conversationId
-          data
-          createdAt
-          updatedAt
-          owner
-        }
         nextToken
+        __typename
       }
       updatedAt
       owner
+      __typename
     }
   }
 `;
 export const onUpdateConversation = /* GraphQL */ `
-  subscription OnUpdateConversation($owner: String) {
-    onUpdateConversation(owner: $owner) {
+  subscription OnUpdateConversation(
+    $filter: ModelSubscriptionConversationFilterInput
+    $owner: String
+  ) {
+    onUpdateConversation(filter: $filter, owner: $owner) {
       id
       name
       user
       description
       createdAt
       utterances {
-        items {
-          id
-          text
-          author
-          conversationId
-          data
-          createdAt
-          updatedAt
-          owner
-        }
         nextToken
+        __typename
       }
       updatedAt
       owner
+      __typename
     }
   }
 `;
 export const onDeleteConversation = /* GraphQL */ `
-  subscription OnDeleteConversation($owner: String) {
-    onDeleteConversation(owner: $owner) {
+  subscription OnDeleteConversation(
+    $filter: ModelSubscriptionConversationFilterInput
+    $owner: String
+  ) {
+    onDeleteConversation(filter: $filter, owner: $owner) {
       id
       name
       user
       description
       createdAt
       utterances {
-        items {
-          id
-          text
-          author
-          conversationId
-          data
-          createdAt
-          updatedAt
-          owner
-        }
         nextToken
+        __typename
       }
       updatedAt
       owner
+      __typename
     }
   }
 `;
 export const onCreateUtterance = /* GraphQL */ `
-  subscription OnCreateUtterance($owner: String) {
-    onCreateUtterance(owner: $owner) {
+  subscription OnCreateUtterance(
+    $filter: ModelSubscriptionUtteranceFilterInput
+    $owner: String
+  ) {
+    onCreateUtterance(filter: $filter, owner: $owner) {
       id
       text
       author
@@ -90,12 +78,16 @@ export const onCreateUtterance = /* GraphQL */ `
       createdAt
       updatedAt
       owner
+      __typename
     }
   }
 `;
 export const onUpdateUtterance = /* GraphQL */ `
-  subscription OnUpdateUtterance($owner: String) {
-    onUpdateUtterance(owner: $owner) {
+  subscription OnUpdateUtterance(
+    $filter: ModelSubscriptionUtteranceFilterInput
+    $owner: String
+  ) {
+    onUpdateUtterance(filter: $filter, owner: $owner) {
       id
       text
       author
@@ -104,12 +96,16 @@ export const onUpdateUtterance = /* GraphQL */ `
       createdAt
       updatedAt
       owner
+      __typename
     }
   }
 `;
 export const onDeleteUtterance = /* GraphQL */ `
-  subscription OnDeleteUtterance($owner: String) {
-    onDeleteUtterance(owner: $owner) {
+  subscription OnDeleteUtterance(
+    $filter: ModelSubscriptionUtteranceFilterInput
+    $owner: String
+  ) {
+    onDeleteUtterance(filter: $filter, owner: $owner) {
       id
       text
       author
@@ -118,6 +114,7 @@ export const onDeleteUtterance = /* GraphQL */ `
       createdAt
       updatedAt
       owner
+      __typename
     }
   }
 `;

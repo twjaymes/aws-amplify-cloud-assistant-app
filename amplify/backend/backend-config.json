@@ -58,6 +58,22 @@
     }
   },
   "parameters": {
+    "AMPLIFY_function_assistantFulfillment_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "assistantFulfillment"
+        }
+      ]
+    },
+    "AMPLIFY_function_assistantFulfillment_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "assistantFulfillment"
+        }
+      ]
+    },
     "AMPLIFY_hosting_amplifyhosting_appId": {
       "usedBy": [
         {

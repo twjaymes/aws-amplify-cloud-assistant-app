@@ -13,20 +13,12 @@ export const createConversation = /* GraphQL */ `
       description
       createdAt
       utterances {
-        items {
-          id
-          text
-          author
-          conversationId
-          data
-          createdAt
-          updatedAt
-          owner
-        }
         nextToken
+        __typename
       }
       updatedAt
       owner
+      __typename
     }
   }
 `;
@@ -42,20 +34,12 @@ export const updateConversation = /* GraphQL */ `
       description
       createdAt
       utterances {
-        items {
-          id
-          text
-          author
-          conversationId
-          data
-          createdAt
-          updatedAt
-          owner
-        }
         nextToken
+        __typename
       }
       updatedAt
       owner
+      __typename
     }
   }
 `;
@@ -71,20 +55,12 @@ export const deleteConversation = /* GraphQL */ `
       description
       createdAt
       utterances {
-        items {
-          id
-          text
-          author
-          conversationId
-          data
-          createdAt
-          updatedAt
-          owner
-        }
         nextToken
+        __typename
       }
       updatedAt
       owner
+      __typename
     }
   }
 `;
@@ -102,6 +78,7 @@ export const createUtterance = /* GraphQL */ `
       createdAt
       updatedAt
       owner
+      __typename
     }
   }
 `;
@@ -119,6 +96,7 @@ export const updateUtterance = /* GraphQL */ `
       createdAt
       updatedAt
       owner
+      __typename
     }
   }
 `;
@@ -136,6 +114,7 @@ export const deleteUtterance = /* GraphQL */ `
       createdAt
       updatedAt
       owner
+      __typename
     }
   }
 `;
